@@ -1,0 +1,45 @@
+1(a)
+    Best Cases:
+        -boxed areas, with no sharp corners 
+        -Areas where things are not close together 
+        -Finding Holes
+    Corner Cases:
+        -If the camera detects a distance further away but the path is narrow, it will not work, Crash!
+        -Same for sharp corners
+        -Threshold of view
+        -Small objects lower than the view
+        
+Problem Solving:
+    As you are moving, you can have the distance sensor move in a position of looking at the ground as it is moving toward 
+    its desired position and move back up to scan for its next move. 
+    
+    It should detect sharp jumps in the distance readings and identify those positions and make adjustments based on those distance       values. 
+    
+    The robot should take into account its own dimensions and also make movement adjustments based on that. 
+    
+    Move slower with more scans
+    
+1(b)
+    Best Cases:
+        -Relatively slow target if following, Open area 
+        -Object is stationary
+    Corner Cases:
+        -Object can move toward robot
+        -If the camera detects a distance further away but the path is narrow, it will not work, Crash! 
+        -Threshold of view
+        -Small objects lower than the view
+        
+Problem Solving:
+    Scan an array of distance values and take an average of the scan, if the scan average is less than a number equivalent
+    to what it takes for the robot to fit, then move in direction of largest distance.
+    
+    As you are moving, you can have the distance sensor move in a position of looking at the ground as it is moving toward 
+    its desired position and move back up to scan for its next move. 
+    
+    It should detect sharp jumps in the distance readings and identify those positions and make adjustments based on those distance       values. 
+    
+    The robot should take into account its own dimensions and also make movement adjustments based on that. 
+    
+    
+    
+    
